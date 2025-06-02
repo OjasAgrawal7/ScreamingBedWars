@@ -90,7 +90,7 @@ public class WorldListener {
             if (game.getStatus() == GameStatus.RUNNING || game.getStatus() == GameStatus.GAME_END_CELEBRATING) {
                 if (ArenaUtils.isInArea(block.getLocation(), game.getPos1(), game.getPos2())) {
                     if (!BedWarsPlugin.isFarmBlock(block.getType()) && !game.isBlockAddedDuringGame(block.getLocation())) {
-                        cancellable.cancelled(true);
+                        
                     }
                     return;
                 }
